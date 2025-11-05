@@ -276,7 +276,56 @@ Evalúa el valor de **opcion** y ejecuta el bloque correspondiente.
               System.out.println("El saldo actualizado es:" + saldo + "$");
           break;
              
+Muestra el saldo actual del cliente.
+**break** detiene el bloque del **switch**.
 
+**Opción 2 – Retirar dinero**
+
+    case 2:
+          System.out.println("¿Cuál es el valor que desea retirar?");
+             double valorAlRetirar = teclado.nextDouble();
+             if (valorAlRetirar > saldo){
+                     System.out.println("Saldo Insuficiente");
+                } else {
+                       saldo = saldo - valorAlRetirar;
+                        System.out.println("Saldo Actualizado es:" + saldo + "$");
+                      }
+                     break;
+
+Pide la cantidad a retirar.
+Si el valor supera el saldo, muestra “Saldo insuficiente”.
+Si hay suficiente dinero, resta el valor al saldo actual.
+
+**Opción 3- Depositar dinero**
+
+       case 3:
+              System.out.println("Valor a depositar");
+              double valorDepositar = teclado.nextDouble();
+              saldo += valorDepositar;
+              System.out.println("Saldo Actualizado es:" + saldo + "$");
+              break;
+
+Solicita la cantidad a depositar.
+Suma el valor al saldo y muestra el nuevo total.
+
+**Opción 9- Salir**
+
+       case 9:
+               System.out.println("Saliendo del programa, gracias por utilizar nuestros servicios");
+               break;
+
+Finaliza el programa mostrando un mensaje de despedida.
+
+**Cualquier otro número**
+
+       default:
+               System.out.println("Opción no válida");
+
+Si el usuario escribe un número que no está en el menú, el programa avisa que la opción es incorrecta.
+
+
+
+       
 
 
 
