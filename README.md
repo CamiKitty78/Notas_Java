@@ -7,11 +7,11 @@ Notas de Resumenes de lo aprendido en cada curso de Back-End en Java
 
 Explicación paso a paso:
 
-*public class Main {
+       *public class Main {
 
-*public static void main(String\[] args) {
+       *public static void main(String\[] args) {
 
-        *System.out.println("Bienvenido(a) a Screen Match");*
+               *System.out.println("Bienvenido(a) a Screen Match");*
 
-        *System.out.println("Película: Matrix");*
-}*
+               *System.out.println("Película: Matrix");*
+       }*
